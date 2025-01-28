@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/feedback.css">
     <title>Feedback Form</title>
 </head>
-<body>
+<body style="background-image: url('assets/img/feedback1.avif');">
     <form action="">
         <h1>Feedback Form</h1>
         <label for="">Name:</label>
@@ -14,15 +15,23 @@
         <label for="">Email:</label>
         <input type="email" name="" id="" placeholder="Enter Your Email">
         <br><br>
-        <label for="">Feedback:</label><br>
+        <label for="">Feedback:</label>
         <textarea name="" id="" placeholder="Enter Your Feedback"></textarea>
         <br><br>
         <label for="">Rating:</label>
-        1<input type="radio" name="1" id="">
-        2<input type="radio" name="1" id="">
-        3<input type="radio" name="1" id="">
-        4<input type="radio" name="1" id="">
-        5<input type="radio" name="1" id="">
+        <div class="rating">
+            <input type="radio" id="" name="rating" value="1">
+            <label for="">★</label>
+            <input type="radio" id="" name="rating" value="2">
+            <label for="">★</label>
+            <input type="radio" id="" name="rating" value="3">
+            <label for="">★</label>
+            <input type="radio" id="" name="rating" value="4">
+            <label for="">★</label>
+            <input type="radio" id="" name="rating" value="5">
+            <label for="">★</label>
+        </div>
+        
         <br><br>
         <input type="submit" value="Submit">
     </form>

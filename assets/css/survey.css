@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 94vh;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    background: linear-gradient(135deg, #a2c2e7, #ffffff);
+    animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background: linear-gradient(135deg, #a2c2e7, #ffffff);
+    }
+    50% {
+        background: linear-gradient(135deg, #6b8ac9, #ffffff);
+    }
+    100% {
+        background: linear-gradient(135deg, #a2c2e7, #ffffff);
+    }
+}
+
+body::before, body::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    animation: floatShape 10s infinite ease-in-out;
+}
+
+body::after {
+    width: 250px;
+    height: 250px;
+    background: rgba(255, 255, 255, 0.15);
+    animation-delay: 5s;
+}
+
+@keyframes floatShape {
+    0% {
+        transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.1) rotate(180deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1) rotate(360deg);
+    }
+}
+
+
+form {
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: black;
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 10px;
+    display: block;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+    font-weight: 400;
+    color: #333;
+}
+
+input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.checkbox-container {
+    display: block;
+    margin-top: 10px;
+}
+
+.checkbox-container div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+input[type="checkbox"] + label {
+    display: inline-block;
+}

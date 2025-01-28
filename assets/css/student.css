@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 94vh;
+    color: white;
+    animation: backgroundColorChange 6s ease-in-out infinite;
+}
+
+@keyframes backgroundColorChange {
+    0% {
+        background-color: #4b97d9;
+    }
+    25% {
+        background-color: #ffb6c1;
+    }
+    50% {
+        background-color: #98fb98;
+    }
+    75% {
+        background-color: #ffeb3b;
+    }
+    100% {
+        background-color: #f0f8ff;
+    }
+}
+
+form {
+    background-color: #000000;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+input[type="radio"] + label {
+    margin-right: 20px;
+    font-weight: normal;
+}
+
+form label[for="fmale"],
+form label[for="ffemale"] {
+    font-weight: normal;
+    color: #333;
+}
+
+form input:focus {
+    outline: 2px solid #007BFF;
+    border-color: #007BFF;
+}
+
+form input[type="password"] {
+    margin-top: -10px;
+}
+

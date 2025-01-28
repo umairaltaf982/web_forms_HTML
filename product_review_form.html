@@ -3,28 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/product.css">
     <title>Ecommerce Product Review Form</title>
 </head>
 <body>
     <form action="">
         <h1>Ecommerce Product Review Form</h1>
-        <label for="">Product Name: </label><br>
+        <label for="">Product Name: </label>
         <input type="text" name="" id="" placeholder="Enter Your Name" required>
-        <br><br>
-        <label for="">Reviewer Name: </label><br>
+        <br>
+        <label for="">Reviewer Name: </label>
         <input type="text" name="" id="" placeholder="Enter Your Name">
-        <br><br>
+        <br>
         <label for="">Rating:</label>
-            1<input type="radio" name="1" id="">
-            2<input type="radio" name="1" id="">
-            3<input type="radio" name="1" id="">
-            4<input type="radio" name="1" id="">
-            5<input type="radio" name="1" id="">
-        <br><br>
-        <label for="">Review:</label><br>
+        <div class="rating">
+            <input type="radio" id="" name="rating" value="1">
+            <label for="">★</label>
+            <input type="radio" id="" name="rating" value="2">
+            <label for="">★</label>
+            <input type="radio" id="" name="rating" value="3">
+            <label for="">★</label>
+            <input type="radio" id="" name="rating" value="4">
+            <label for="">★</label>
+            <input type="radio" id="" name="rating" value="5">
+            <label for="">★</label>
+        </div>
+        <br>
+        <label for="">Review:</label>
         <textarea name="" id="" placeholder="Enter Your Skills"></textarea>
-        <br><br>
-        <label for="">Would you recommend this product?</label><br>
+        <br>
+        <label for="">Would you recommend this product?</label>
         <input type="radio" name="yes" id="">Yes <br>
         <input type="radio" name="yes" id="">No
     </form>

@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    color: white;
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+    animation: gradientShift 8s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% {
+        background: linear-gradient(45deg, #ff7e5f, #feb47b);
+    }
+    25% {
+        background: linear-gradient(45deg, #6a11cb, #2575fc);
+    }
+    50% {
+        background: linear-gradient(45deg, #00c6ff, #0072ff);
+    }
+    75% {
+        background: linear-gradient(45deg, #ff7e5f, #feb47b);
+    }
+    100% {
+        background: linear-gradient(45deg, #6a11cb, #2575fc);
+    }
+}
+
+
+form {
+    background-color: #020000;
+    padding: 30px;
+    border-radius: 10px;
+    opacity: 0.9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #ccc;
+    transition: color 0.2s;
+}
+
+.rating label:hover,
+.rating label:hover ~ label {
+    color: #ffc107;
+}
+
+.rating input:checked ~ label {
+    color: #ffc107;
+}
+
+
+input[type="radio"] + label {
+    margin-right: 5px;
+}
+
+input[type="radio"]:checked + label:hover,
+input[type="radio"]:checked + label:hover ~ label {
+    color: gold;
+}
